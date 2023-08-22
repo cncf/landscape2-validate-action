@@ -1,0 +1,15 @@
+name: Landscape2 validate action
+
+inputs:
+  data_file: 
+    description: 'Landscape data file local path'
+
+runs:
+  using: 'docker'
+  image: 'docker://public.ecr.aws/g6m3a0y9/landscape2'
+  entrypoint: landscape2
+  args:
+    - validate
+    - data
+    - --data-file
+    - ${{ inputs.data_file }}
