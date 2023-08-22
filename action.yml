@@ -3,6 +3,7 @@ name: Landscape2 validate action
 inputs:
   data_file: 
     description: 'Landscape data file local path'
+    required: true
 
 runs:
   using: 'docker'
