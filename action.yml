@@ -10,7 +10,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://public.ecr.aws/g6m3a0y9/landscape2'
+  image: 'docker://ghcr.io/cncf/landscape2'
   entrypoint: /landscape2-validate.sh
   args:
     - ${{ inputs.target_kind }}
